@@ -1,0 +1,144 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+  400 - regular
+  500 - medium
+  700 - bold
+  800 - extra-bold
+font-family: 'Poppins', sans-serif;
+  400 - regular
+  700 - bold
+*/
+
+BODY {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  color: #252525;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+IMG {
+  border: 0;
+}
+
+HR {
+  border: none 0;
+  border-top: 1pt solid #252525; /* the border */
+  height: 1pt; /* whatever the total width of the border-top and border-bottom equal */
+}
+
+A:link, A:visited {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+A:hover, A:active {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+H1 {
+  font-size: 1.7em;
+}
+
+H2 {
+  font-size: 1.5em;
+}
+
+.site-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-width:after,
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+ 
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cycle-slideshow {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.cycle-slideshow > DIV {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cycle-slideshow .video-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cycle-slideshow .video-banner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+
+.cycle-slideshow .video-banner iframe,
+.cycle-slideshow .video-banner.vimeo-banner DIV,
+.cycle-slideshow .video-banner.vimeo-banner DIV iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.cycle-slideshow .video-text {
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  /* Small computer or landscape tablet */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Small tablet */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Phone */
+}
