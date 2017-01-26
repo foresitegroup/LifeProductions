@@ -61,9 +61,6 @@ H2 {
   clear: both;
 }
 
-
-
-
 .video {
   position: relative;
   padding-bottom: 56.25%;
@@ -82,44 +79,310 @@ H2 {
   height: 100%;
 }
 
-.cycle-slideshow {
+.lp-header {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1em;
+  padding-top: 20px;
+}
+
+.lp-header .menu {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  list-style-type: 0;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.lp-header .menu LI {
+  display: inline-block;
+  margin-left: 60px;
   position: relative;
+}
+
+.lp-header .menu LI:first-of-type {
+  margin-left: 0;
+}
+
+.lp-header .menu LI A:link,
+.lp-header .menu LI A:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.lp-header .menu LI A:hover,
+.lp-header .menu LI A:active,
+.lp-header .menu LI:hover > A {
+  color: #99CA3C;
+  text-decoration: none;
+}
+
+.lp-header .menu LI UL {
+  display: none;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  transform: none;
+  padding: 0.25em 0;
+}
+
+.lp-header .menu LI:hover UL {
+  display: block;
+}
+
+.lp-header .menu LI UL LI {
+  display: block;
+  margin-left: 0;
+  white-space: nowrap;
+  padding: 0.25em 0;
+}
+
+.video-banner {
+  position: relative;
+  width: 100%;
   padding-top: 56.25%;
 }
 
-.cycle-slideshow > DIV {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.cycle-slideshow .video-banner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.cycle-slideshow .video-banner:before {
+.video-banner:after {
   content: "";
+  display: block;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .4);
 }
 
-.cycle-slideshow .video-banner iframe,
-.cycle-slideshow .video-banner.vimeo-banner DIV,
-.cycle-slideshow .video-banner.vimeo-banner DIV iframe {
+.video-banner VIDEO {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-position: center center;
+  background-size: cover;
 }
 
-.cycle-slideshow .video-text {
-  color: #FFFFFF;
+.video-banner .video-text {
   position: absolute;
+  z-index: 5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 1000px;
+  color: #FFFFFF;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.1em;
+  text-align: center;
+}
+
+.video-banner .video-text H3 {
+  margin: 0 0 1.2em;
+  color: #99CA3C;
+  font-size: 25px;
+  line-height: 1em;
+  letter-spacing: 0.3em;
+}
+
+.video-banner .video-text A:link,
+.video-banner .video-text A:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 138px;
+  line-height: 1em;
+  margin-top: 0.3em;
+  display: inline-block;
+}
+
+.video-banner .video-text A:hover,
+.video-banner .video-text A:active {
+  color: #99CA3C;
+  text-decoration: none;
+}
+
+.bisect-top,
+.bisect-top-outer,
+.bisect-bottom,
+.bisect-bottom-outer {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  width: 1px;
+  height: 75px;
+  border-left: 1px solid #99CA3C;
+}
+
+.bisect-top-outer {
+  top: -75px;
+}
+
+.bisect-bottom {
+  top: auto;
+  bottom: 0;
+}
+
+.bisect-bottom-outer {
+  top: auto;
+  bottom: -75px;
+}
+
+H3.home-header {
+  margin: 0 0 1em;
+  color: #99CA3C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1em;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.about {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 4em 0 6em;
+  font-size: 25px;
+  line-height: 1.5em;
+  text-align: center;
+  position: relative;
+}
+
+.about H3.home-header {
+  margin-bottom: 4em;
+}
+
+.about .one-third {
+  margin-top: 75px;
+  display: inline-block;
+  vertical-align: top;
+  width: 26%;
+  margin-right: 10%;
+  color: #959595;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+.about .one-third:last-of-type {
+  margin-right: 0;
+}
+
+.about .one-third .image-box {
+  padding-top: 100%;
+  position: relative;
+}
+
+.about .one-third .image-box IMG {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 100%;
+  height: auto;
+}
+
+.our-work {
+  position: relative;
+  margin-top: 100px;
+}
+
+.our-work-video {
+  float: left;
+  width: 33.33%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.our-work-video:before {
+  content: "";
+  display: block;
+  padding-top: 87.5%;
+}
+
+.our-work-video:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+}
+
+.our-work-video.letterbox {
+  background-size: auto 133%;
+}
+
+.our-work-video A:link,
+.our-work-video A:visited {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 110px;
+  line-height: 1em;
+}
+
+.our-work-video A:hover,
+.our-work-video A:active {
+  color: #99CA3C;
+  text-decoration: none;
+}
+
+.our-work-video > DIV {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.1em;
+  letter-spacing: 0.1em;
+  padding: 1.2em 1.5em;
+}
+
+.our-work-video > DIV SPAN {
+  color: #B4CD44;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.partners {
+  position: relative;
+  padding: 100px;
+  background: #99CA3C;
+}
+
+.partners .bisect-top,
+.partners .bisect-bottom {
+  border-color: #143200;
+}
+
+.partners H3.home-header {
+  color: #042800;
+  letter-spacing: 0.5em
 }
 
 
@@ -127,8 +390,20 @@ H2 {
 
 
 
+
+
+
+@media only screen and (max-width: 1000px) {
+  .home-about {
+    width: 96%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   /* Small computer or landscape tablet */
+  .site-width {
+    width: 96%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
