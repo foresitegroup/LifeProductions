@@ -98,11 +98,11 @@
           Nationally Certified as a Women's Business Enterprise
         </div>
       </div>
-      
+
       <h3 class="home-header">OUR WORK</h3>
       <div class="our-work cf">
         <div class="bisect-top-outer"></div>
-        
+
         <div class="our-work-video" style="background-image: url(images/video-milwaukee-excellence.jpg);">
           <a href="https://www.youtube.com/watch?v=43XkOUKYzj0" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
 
@@ -163,23 +163,121 @@
 
         <h3 class="home-header">WE'VE PARTNERED WITH</h3>
 
-        PARTNERS LOGOS HERE
+        <div class="image" style="background-image: url(images/logo-business-journal.png)"></div>
+        <div class="image" style="background-image: url(images/logo-aurora-health.png)"></div>
+        <div class="image" style="background-image: url(images/logo-childrens-hospital.png)"></div>
+        <div class="image" style="background-image: url(images/logo-girl-scouts.png)"></div>
+        <div class="image" style="background-image: url(images/logo-upaf.png)"></div>
+        <div class="image" style="background-image: url(images/logo-kelmann.png)"></div>
+        <div class="image" style="background-image: url(images/logo-ronald-mcdonald.png)"></div>
+        <div class="image" style="background-image: url(images/logo-mcw.png)"></div>
+        <div class="image" style="background-image: url(images/logo-mount-mary.png)"></div>
+        <div class="image" style="background-image: url(images/logo-sainta.png)"></div>
+
+        <div style="clear: both;"></div>
 
         <div class="bisect-bottom"></div>
       </div>
 
       <div class="testimonials">
-        TESTIMONIALS (ROTATING)
+        <div class="bisect-top"></div>
+
+        <h3 class="home-header">WHAT THEY'VE SAID</h3>
+
+        <link rel="stylesheet" href="inc/slick/slick.css">
+        <script type="text/javascript" src="inc/slick/slick.min.js"></script>
+        <script type="text/javascript" src="inc/slick/slick.init.testimonials.js"></script>
+        <div class="testimonials-slider">
+          <div>
+            &ldquo;Life Productions was able to turn the tale of the Brewhouse Inn & Suites into a film showing potential foreign investors not only the historical significance of the building, but how our company truly brings historic buildings back to life through renovation. Life Productions is truly an asset when it comes to telling others your story.&rdquo;
+
+            <div>
+              <strong>Gary Gorman</strong>, CEO Gorman & Company, Inc.
+            </div>
+          </div>
+
+          <div>
+            &ldquo;As publisher of the Business Journal for 20-plus years, we turned to Life Productions to help us tell the stories of the winners of our biggest event each year &mdash; the Women of Influence Awards. The videos played a huge role in honoring the winners. And working with Tami and Louise was in itself a special part of the program. They are both women of influence.&rdquo;
+
+            <div>
+              <strong>Mark Sabljak</strong>, Milwaukee Film Festival, Corporate & Community Engagement Advisor
+            </div>
+          </div>
+
+          <div>
+            &ldquo;Life Productions provided excellent service and care in meeting our needs. They listened to us, provided creative suggestions, and accommodated all our requests. Their timeliness, professionalism and passion for their work resulted in a wonderful product that highlights our important work. They have the attention-to-detail, customer-centered, creative and professional approach along with high-end equipment necessary to achieve a successful video. We have worked with a lot of external vendors and Life Productions easily rises to the top of our favorites.&rdquo;
+
+            <div>
+              <strong>Karen Ordinans</strong>, Executive Director Children's Health Alliance of Wisconsin | Wisconsin's voice for children's health
+            </div>
+          </div>
+
+          <div>
+            &ldquo;The Sacagawea Awards dinner serves as the signature event for Professional Dimensions, Inc. Each year, the pinnacle of the event is a video produced by Life Productions, Inc. that highlights our two award winners.  The video makes people laugh, cry and leave our event with the feeling they got to know our winners personally.  The video production is first class in every respect.  From the scheduling of shoots with our winners, to the unveiling of the final product, Life Productions is a pleasure to work with.  Attention to detail, no matter how many takes are necessary and a first class quality video is why Professional Dimensions uses Life Productions year after year.&rdquo;
+
+            <div>
+              <strong>Mary Bridges</strong>, Professional Dimensions Executive Director
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="experience">
         Since 2005 Life Productions Inc. has produced over 225 videos for clients in the greater Milwaukee area. Our experience has helped us to develop a successful strategy to engage audiences, constituents and benefactors.
       </div>
 
+      <h3 class="home-header">LEADERSHIP</h3>
       <div class="leadership">
-        LEADERSHIP<br>
-        2 COL TAMI AND LOUISE<br>
-        1 ROTATING
+        <div class="bisect-top-outer"></div>
+        
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('.leader').on('touchstart touchend', function(e){
+              e.preventDefault();
+              $(this).toggleClass('hover');
+            });
+          });
+        </script>
+
+        <div class="leader" style="background-image: url(images/leadership-tami.jpg);">
+          <div class="leader-content">
+            TAMI SWEENEY
+            <div>Executive Producer / Partner</div>
+          </div>
+
+          <div class="leader-content-hover">
+            A UW Madison graduate with a background in Public Television (WHA-TV, WNDU-TV), editing promotional pieces and doing research for local documentaries. Her work has been featured on ESPN along with winning a Chicago Midwest Emmy Award for a Single Public Affairs Program in 1997-98.<br>
+            <br>
+
+            <div class="social">
+              <a href="http://twitter.com/thetruetami"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="leader" style="background-image: url(images/leadership-louise.jpg);">
+          <div class="leader-content">
+            LOUISE BERG
+            <div>Executive Producer / Partner</div>
+          </div>
+
+          <div class="leader-content-hover">
+            A University of Minnesota graduate with a background in software, graphic and technical support while also volunteering in many capacities.  She has won awards for editing and production and was recently named as a member of The Aurora Awards International Judging Committee.<br>
+            <br>
+
+            <div class="social">
+              <a href="http://twitter.com/lpivideo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <div class="leadership-slider">
+          ROTATING
+        </div>
       </div>
     </div>
 

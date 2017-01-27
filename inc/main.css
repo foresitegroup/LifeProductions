@@ -250,7 +250,7 @@ H3.home-header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1em;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.5em;
   text-align: center;
 }
 
@@ -371,7 +371,7 @@ H3.home-header {
 
 .partners {
   position: relative;
-  padding: 100px;
+  padding: 100px 0;
   background: #99CA3C;
 }
 
@@ -382,7 +382,210 @@ H3.home-header {
 
 .partners H3.home-header {
   color: #042800;
-  letter-spacing: 0.5em
+}
+
+.partners IMG {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  width: 12%;
+  
+}
+
+.partners IMG.wide {
+  width: 20%;
+}
+
+.partners .image {
+  float: left;
+  width: 12%;
+  margin: 50px 4%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.partners .image:after {
+  content: "";
+  display: block;
+  padding-top: 62.5%;
+}
+
+.testimonials {
+  background: #252525;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 1.8em;
+  text-align: center;
+  padding: 100px 0 80px;
+  position: relative;
+}
+
+.testimonials H3.home-header {
+  margin-bottom: 1.5em;
+}
+
+.testimonials-slider {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonials-slider .slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-slider .slick-slide DIV {
+  margin: 3em 0 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1em;
+}
+
+.testimonials .slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  font-size: 8px;
+  line-height: 1em;
+}
+
+.testimonials .slick-dots LI {
+  display: inline-block;
+}
+
+.testimonials .slick-dots LI BUTTON {
+  margin: 0 4px;
+  padding: 0;
+  font-size: 0;
+  border: 3px solid #AEAFAF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.testimonials .slick-dots LI BUTTON:focus {
+  outline: none;
+}
+
+.testimonials .slick-dots LI.slick-active BUTTON {
+  background: #AEAFAF;
+}
+
+.experience {
+  width: 910px;
+  margin: 4em auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.leadership {
+  position: relative;
+  margin: 100px auto;
+}
+
+.leadership .leader {
+  float: left;
+  width: 50%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.leadership .leader:before {
+  content: "";
+  display: block;
+  padding-top: 66.66%;
+}
+
+.leadership .leader:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.leader-content {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4em;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.leader-content DIV {
+  color: #99CA3C;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0;
+}
+
+.leader-content-hover {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 4em;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.leader:hover .leader-content-hover {
+  display: block;
+}
+
+.social {
+  line-height: 1em;
+}
+
+.social A:link,
+.social A:visited {
+  margin: 0 0.3em;
+  display: inline-block;
+  padding: 0.3em;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #252525;
+}
+
+.social A:hover,
+.social A:active {
+  background: #99CA3C;
+}
+
+.leadership-slider {
+  outline: 1px solid red;
 }
 
 
@@ -393,9 +596,17 @@ H3.home-header {
 
 
 
+
+
+
 @media only screen and (max-width: 1000px) {
-  .home-about {
+  .about,
+  .experience {
     width: 96%;
+  }
+
+  .testimonials-slider {
+    width: 85%;
   }
 }
 
