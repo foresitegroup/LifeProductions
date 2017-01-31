@@ -1,8 +1,8 @@
 $(document).ready(function(){
-  $('.testimonials-slider').slick({
+  $('.leadership-slider').slick({
     arrows: false,
     dots: true,
-    appendDots: $('.testimonials'),
+    // appendDots: $('.testimonials'),
     fade: true,
     autoplay: true,
     autoplaySpeed: 8000,

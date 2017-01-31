@@ -1,11 +1,18 @@
-<?php $PageTitle = ""; ?>
+<?php
+function email($address, $name="") {
+  $email = "";
+  for ($i = 0; $i < strlen($address); $i++) { $email .= (rand(0, 1) == 0) ? "&#" . ord(substr($address, $i)) . ";" : substr($address, $i, 1); }
+  if ($name == "") $name = $email;
+  echo "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;$email\">$name</a>";
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Life Productions<?php if ($PageTitle != "") echo " | " . $PageTitle; ?></title>
+    <title>Life Productions<?php if (isset($PageTitle)) echo " | " . $PageTitle; ?></title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
@@ -46,8 +53,8 @@
     </script>
 
     <div class="video-banner">
-      <video playsinline autoplay muted loop poster="images/video-banner-test-poster.jpg">
-        <source src="video/test.mp4" type="video/mp4">
+      <video playsinline autoplay muted loop poster="images/home-banner.jpg">
+        <source src="video/home-banner.mp4" type="video/mp4">
       </video>
 
       <div class="video-text">
@@ -69,33 +76,38 @@
 
         Life Productions is a video production agency that specializes in professionally produced videos for businesses, individuals and organizations. We believe our unscripted media presentations are powerful communication tools that showcase the essence of an individual, business or organization by letting our clients tell their story "in their own words" through digital video.<br>
         <br>
+        
+        <link rel="stylesheet" href="inc/slick/slick.css">
+        <script type="text/javascript" src="inc/slick/slick.min.js"></script>
+        <script type="text/javascript" src="inc/slick/slick.init.awards.js"></script>
+        <div class="awards">
+          <div class="one-third">
+            <div class="image-box">
+              <img src="images/about-aurora-awards.png" alt="The Aurora Awards">
+            </div>
 
-        <div class="one-third">
-          <div class="image-box">
-            <img src="images/about-aurora-awards.png" alt="The Aurora Awards">
+            Cardinal Stritch Ruth Coleman Tribute Gold<br>
+            St. Catherine Residence Gold<br>
+            Frank Mayer &amp; Associates, Inc. Best of Show
           </div>
 
-          Cardinal Stritch Ruth Coleman Tribute Gold<br>
-          St. Catherine Residence Gold<br>
-          Frank Mayer &amp; Associates, Inc. Best of Show
-        </div>
+          <div class="one-third">
+            <div class="image-box">
+              <img src="images/about-telly-awards.png" alt="The Telly Awards">
+            </div>
 
-        <div class="one-third">
-          <div class="image-box">
-            <img src="images/about-telly-awards.png" alt="The Telly Awards">
+            Milwaukee Women's Center<br>
+            Marquette High School<br>
+            Assitive Resource
           </div>
 
-          Milwaukee Women's Center<br>
-          Marquette High School<br>
-          Assitive Resource
-        </div>
+          <div class="one-third">
+            <div class="image-box">
+              <img src="images/about-wbe.png" alt="WBENC">
+            </div>
 
-        <div class="one-third">
-          <div class="image-box">
-            <img src="images/about-wbe.png" alt="WBENC">
+            Nationally Certified as a Women's Business Enterprise
           </div>
-
-          Nationally Certified as a Women's Business Enterprise
         </div>
       </div>
 
@@ -162,19 +174,20 @@
         <div class="bisect-top"></div>
 
         <h3 class="home-header">WE'VE PARTNERED WITH</h3>
-
-        <div class="image" style="background-image: url(images/logo-business-journal.png)"></div>
-        <div class="image" style="background-image: url(images/logo-aurora-health.png)"></div>
-        <div class="image" style="background-image: url(images/logo-childrens-hospital.png)"></div>
-        <div class="image" style="background-image: url(images/logo-girl-scouts.png)"></div>
-        <div class="image" style="background-image: url(images/logo-upaf.png)"></div>
-        <div class="image" style="background-image: url(images/logo-kelmann.png)"></div>
-        <div class="image" style="background-image: url(images/logo-ronald-mcdonald.png)"></div>
-        <div class="image" style="background-image: url(images/logo-mcw.png)"></div>
-        <div class="image" style="background-image: url(images/logo-mount-mary.png)"></div>
-        <div class="image" style="background-image: url(images/logo-sainta.png)"></div>
-
-        <div style="clear: both;"></div>
+        
+        <script type="text/javascript" src="inc/slick/slick.init.partners.js"></script>
+        <div class="partner-images">
+          <div class="image" style="background-image: url(images/logo-business-journal.png)"></div>
+          <div class="image" style="background-image: url(images/logo-aurora-health.png)"></div>
+          <div class="image" style="background-image: url(images/logo-childrens-hospital.png)"></div>
+          <div class="image" style="background-image: url(images/logo-girl-scouts.png)"></div>
+          <div class="image" style="background-image: url(images/logo-upaf.png)"></div>
+          <div class="image" style="background-image: url(images/logo-kelmann.png)"></div>
+          <div class="image" style="background-image: url(images/logo-ronald-mcdonald.png)"></div>
+          <div class="image" style="background-image: url(images/logo-mcw.png)"></div>
+          <div class="image" style="background-image: url(images/logo-mount-mary.png)"></div>
+          <div class="image" style="background-image: url(images/logo-sainta.png)"></div>
+        </div>
 
         <div class="bisect-bottom"></div>
       </div>
@@ -184,8 +197,6 @@
 
         <h3 class="home-header">WHAT THEY'VE SAID</h3>
 
-        <link rel="stylesheet" href="inc/slick/slick.css">
-        <script type="text/javascript" src="inc/slick/slick.min.js"></script>
         <script type="text/javascript" src="inc/slick/slick.init.testimonials.js"></script>
         <div class="testimonials-slider">
           <div>
@@ -229,7 +240,7 @@
       <h3 class="home-header">LEADERSHIP</h3>
       <div class="leadership">
         <div class="bisect-top-outer"></div>
-        
+
         <script type="text/javascript">
           $(document).ready(function() {
             $('.leader').on('touchstart touchend', function(e){
@@ -275,18 +286,44 @@
 
         <div style="clear: both;"></div>
 
+        <script type="text/javascript" src="inc/slick/slick.init.home-slider.js"></script>
         <div class="leadership-slider">
-          ROTATING
+          <div style="background-image: url(images/home-slider1.jpg);"></div>
+          <div style="background-image: url(images/home-slider2.jpg);"></div>
+          <div style="background-image: url(images/home-slider3.jpg);"></div>
+          <div style="background-image: url(images/home-slider4.jpg);"></div>
+          <div style="background-image: url(images/home-slider5.jpg);"></div>
+          <div style="background-image: url(images/home-slider6.jpg);"></div>
         </div>
       </div>
     </div>
 
     <div class="chat">
-      LET'S CHAT
+      <div class="site-width">
+        HAVE A STORY TO TELL? <a href="#">LET'S CHAT</a>
+      </div>
     </div>
 
     <div class="lp-footer">
-      FOOTER
+      <div class="site-width">
+        <div class="footer-col2">
+          <?php email("hello@lifeproductonsinc.com"); ?><br>
+          (414) 123-4567
+        </div>
+
+        <div class="footer-col1">
+          5061 N. Cumberland Blvd<br>
+          Milwaukee, WI 53217
+        </div>
+
+        <div class="footer-col3">
+          <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
     </div>
 
   </body>
