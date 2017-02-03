@@ -8,7 +8,7 @@
 }
 
 .admin {
-  padding: 4em 0;
+  padding: 3em 0;
 }
 
 H3 {
@@ -47,15 +47,15 @@ STRONG {
 }
 
 #sortable .controls {
-  width: 6em;
+  width: 3em;
 }
 
 #sortable .record {
-  width: calc(100% - 9.5em);
+  width: calc(100% - 6.5em);
 }
 
 .controls .fa {
-  margin-right: 0.6em;
+  margin: 0 0.6em 0.5em 0;
 }
 
 .controls A:link .fa-pencil,
@@ -92,4 +92,10 @@ STRONG {
 .attr {
   font-weight: 500;
   font-size: 80%;
+  line-height: 1.4em;
+}
+
+.one-half.edit {
+  float: none;
+  margin: 0 auto;
 }

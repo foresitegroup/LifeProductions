@@ -1,7 +1,7 @@
     <?php if (!isset($Chat)) { ?>
     <div class="chat">
       <div class="site-width">
-        HAVE A STORY TO TELL? <a href="#">LET'S CHAT</a>
+        HAVE A STORY TO TELL? <a href="<?php echo $TopDir; ?>contact.php">LET'S CHAT</a>
       </div>
     </div>
     <?php } ?>

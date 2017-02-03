@@ -159,37 +159,22 @@ include "header.php";
 
     <script type="text/javascript" src="inc/slick/slick.init.testimonials.js"></script>
     <div class="testimonials-slider">
-      <div>
-        &ldquo;Life Productions was able to turn the tale of the Brewhouse Inn & Suites into a film showing potential foreign investors not only the historical significance of the building, but how our company truly brings historic buildings back to life through renovation. Life Productions is truly an asset when it comes to telling others your story.&rdquo;
+      <?php
+      include_once "inc/dbconfig.php";
+      $result = $mysqli->query("SELECT * FROM testimonials WHERE publish = 'on' ORDER BY sort+0 ASC");
 
+      while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+        ?>
         <div>
-          <strong>Gary Gorman</strong>, CEO Gorman & Company, Inc.
+          &ldquo;<?php echo nl2br($row['testimonial']); ?>&rdquo;
+
+          <div><strong><?php echo $row['person']; ?></strong>, <?php echo $row['title']; ?></div>
         </div>
-      </div>
+        <?php
+      }
 
-      <div>
-        &ldquo;As publisher of the Business Journal for 20-plus years, we turned to Life Productions to help us tell the stories of the winners of our biggest event each year &mdash; the Women of Influence Awards. The videos played a huge role in honoring the winners. And working with Tami and Louise was in itself a special part of the program. They are both women of influence.&rdquo;
-
-        <div>
-          <strong>Mark Sabljak</strong>, Milwaukee Film Festival, Corporate & Community Engagement Advisor
-        </div>
-      </div>
-
-      <div>
-        &ldquo;Life Productions provided excellent service and care in meeting our needs. They listened to us, provided creative suggestions, and accommodated all our requests. Their timeliness, professionalism and passion for their work resulted in a wonderful product that highlights our important work. They have the attention-to-detail, customer-centered, creative and professional approach along with high-end equipment necessary to achieve a successful video. We have worked with a lot of external vendors and Life Productions easily rises to the top of our favorites.&rdquo;
-
-        <div>
-          <strong>Karen Ordinans</strong>, Executive Director Children's Health Alliance of Wisconsin | Wisconsin's voice for children's health
-        </div>
-      </div>
-
-      <div>
-        &ldquo;The Sacagawea Awards dinner serves as the signature event for Professional Dimensions, Inc. Each year, the pinnacle of the event is a video produced by Life Productions, Inc. that highlights our two award winners.  The video makes people laugh, cry and leave our event with the feeling they got to know our winners personally.  The video production is first class in every respect.  From the scheduling of shoots with our winners, to the unveiling of the final product, Life Productions is a pleasure to work with.  Attention to detail, no matter how many takes are necessary and a first class quality video is why Professional Dimensions uses Life Productions year after year.&rdquo;
-
-        <div>
-          <strong>Mary Bridges</strong>, Professional Dimensions Executive Director
-        </div>
-      </div>
+      $result->close();
+      ?>
     </div>
   </div>
 

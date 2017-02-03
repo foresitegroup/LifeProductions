@@ -82,6 +82,7 @@ TEXTAREA {
 TEXTAREA {
   padding: 0.9em 1em;
   height: 18em;
+  line-height: 1.3em;
   border: 1px solid #B7B7B7;
 }
 
@@ -250,6 +251,13 @@ A.slick-next {
   padding-top: 20px;
 }
 
+.lp-header.journal-single-header {
+  position: relative;
+  left: 0;
+  transform: none;
+  padding-bottom: 20px;
+}
+
 .lp-header #logo {
   display: inline-block;
   width: 118px;
@@ -278,6 +286,10 @@ A.slick-next {
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
+.lp-header.journal-single-header .menu UL {
+  text-shadow: none;
+}
+
 .lp-header .menu UL LI {
   display: inline-block;
   margin-left: 60px;
@@ -298,9 +310,17 @@ A.slick-next {
   text-decoration: none;
 }
 
+.lp-header.journal-single-header .menu UL LI A:link,
+.lp-header.journal-single-header .menu UL LI A:visited {
+  color: #000000;
+}
+
 .lp-header .menu UL LI A:hover,
 .lp-header .menu UL LI A:active,
-.lp-header .menu UL LI:hover > A {
+.lp-header .menu UL LI:hover > A,
+.lp-header.journal-single-header .menu UL LI A:hover,
+.lp-header.journal-single-header .menu UL LI A:active,
+.lp-header.journal-single-header .menu UL LI:hover > A {
   color: #99CA3C;
   text-decoration: none;
 }
@@ -403,10 +423,41 @@ A.slick-next {
   min-height: 640px;
 }
 
-.banner:before {
+.banner:after {
   content: "";
   display: block;
   padding-top: 44.44%;
+}
+
+.banner.journal-single,
+.banner.journal-index {
+  background: url(../images/journal-banner.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 0;
+}
+
+.banner.journal-index:after {
+  padding-top: 41.66%;
+}
+
+.banner.journal-index:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.banner.journal-single {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner.journal-single:before {
+  padding-top: 44%;
 }
 
 .banner .site-width {
@@ -434,6 +485,12 @@ A.slick-next {
   margin: 0;
   color: #98CA3E;
   font-size: 65%;
+}
+
+.banner.journal-index .site-width {
+  font-size: 100px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
 }
 
 .bisect-top,
@@ -1008,6 +1065,176 @@ H3.headline {
   width: 59%;
   margin: 0 auto;
 }
+
+.journal-content-single .journal-date {
+  margin-top: 75px;
+  color: #98CA3E;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.journal-content-single H2 {
+  margin: 40px 0 100px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.journal-content-single P {
+  width: 900px;
+  margin: 1.5em auto;
+  font-size: 14px;
+  line-height: 3em;
+}
+
+.journal-content-single IMG.alignnone,
+.journal-content-single IMG.aligncenter {
+  max-width: 100%;
+  height: auto;
+  margin: 50px 0;
+}
+
+.journal-content-single IMG.alignleft {
+  float: left;
+  max-width: 48%;
+  height: auto;
+  margin: 1em 4% 1em 0;
+}
+
+.journal-content-single IMG.alignright {
+  float: right;
+  max-width: 48%;
+  height: auto;
+  margin: 1em 0 1em 4%;
+}
+
+.journal-content-single .video {
+  margin: 75px 0;
+}
+
+.journal-gallery {
+  margin: 100px 0 50px;
+}
+
+.journal-gallery A {
+  float: left;
+  width: 100%;
+  margin-right: 3%;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3em;
+}
+
+.journal-gallery A:before {
+  content: "";
+  display: block;
+  padding-top: 63.36%;
+}
+
+.journal-gallery.gallery-columns-2 A { width: 48.50%; }
+.journal-gallery.gallery-columns-3 A { width: 31.33%; }
+.journal-gallery.gallery-columns-4 A { width: 22.75%; }
+.journal-gallery.gallery-columns-5 A { width: 17.60%; }
+.journal-gallery.gallery-columns-6 A { width: 14.16%; }
+.journal-gallery.gallery-columns-7 A { width: 11.71%; }
+.journal-gallery.gallery-columns-8 A { width: 9.875%; }
+.journal-gallery.gallery-columns-9 A { width: 8.444%; }
+
+.journal-gallery.gallery-columns-1 A,
+.journal-gallery.gallery-columns-2 A:nth-of-type(even),
+.journal-gallery.gallery-columns-3 A:nth-of-type(3n+3),
+.journal-gallery.gallery-columns-4 A:nth-of-type(4n+4),
+.journal-gallery.gallery-columns-5 A:nth-of-type(5n+5),
+.journal-gallery.gallery-columns-6 A:nth-of-type(6n+6),
+.journal-gallery.gallery-columns-7 A:nth-of-type(7n+7),
+.journal-gallery.gallery-columns-8 A:nth-of-type(8n+8),
+.journal-gallery.gallery-columns-9 A:nth-of-type(9n+9) {
+  margin-right: 0;
+}
+
+NAV H2 {
+  display: none;
+}
+
+.nav-links {
+  padding: 40px 0 100px;
+}
+
+.nav-links:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-links A:link,
+.nav-links A:visited {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #EBEBEB;
+  padding: 2.8em 7.5%;
+  background-position: center center;
+  background-size: 0 0;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.nav-links A:hover,
+.nav-links A:active {
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.nav-links A:hover:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+.nav-links A.next { border-left-width: 1px; }
+.nav-links A.prev { border-right-width: 1px; }
+
+.nav-links A.next:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-links A.prev:after {
+  font-family: "FontAwesome";
+  content: "\f060";
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 
 
 

@@ -48,7 +48,7 @@ include "header.php";
           echo "</div>\n";
 
           echo "<div class=\"record\">";
-          echo $row['testimonial'];
+          echo nl2br($row['testimonial']);
           echo "<div class=\"attr\"><strong>" . $row['person'] . "</strong>, " . $row['title'] . "</div>";
           echo "</div>";
 
