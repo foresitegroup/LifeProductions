@@ -1,0 +1,95 @@
+.banner.banner-admin {
+  min-height: 160px;
+  background: #252525;
+}
+
+.banner.banner-admin:before {
+  padding-top: 0;
+}
+
+.admin {
+  padding: 4em 0;
+}
+
+H3 {
+  margin: 0 0 0.3em;
+  color: #99CA3C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+STRONG {
+  font-weight: 800;
+}
+
+.one-half {
+  float: left;
+  width: 45%;
+}
+
+.one-half.last {
+  float: right;
+}
+
+.controls {
+  float: left;
+  width: 5.3em;
+  font-size: 25px;
+}
+
+.record {
+  float: left;
+  width: calc(100% - 8.5em);
+  margin-bottom: 1.5em;
+  line-height: 1.4em;
+}
+
+#sortable .controls {
+  width: 6em;
+}
+
+#sortable .record {
+  width: calc(100% - 9.5em);
+}
+
+.controls .fa {
+  margin-right: 0.6em;
+}
+
+.controls A:link .fa-pencil,
+.controls A:visited .fa-pencil {
+  color: #FBB042;
+}
+
+.controls A:link .fa-trash,
+.controls A:visited .fa-trash {
+  color: #BBBBBB;
+}
+
+.controls A:link .fa-toggle-on,
+.controls A:visited .fa-toggle-on {
+  color: green;
+}
+
+.controls A:link .fa-toggle-off,
+.controls A:visited .fa-toggle-off {
+  color: #B7262F;
+}
+
+.controls A:hover .fa-pencil,
+.controls A:active .fa-pencil,
+.controls A:hover .fa-trash,
+.controls A:active .fa-trash,
+.controls A:hover .fa-toggle-on,
+.controls A:active .fa-toggle-on,
+.controls A:hover .fa-toggle-off,
+.controls A:active .fa-toggle-off {
+  color: #A35E0A;
+}
+
+.attr {
+  font-weight: 500;
+  font-size: 80%;
+}

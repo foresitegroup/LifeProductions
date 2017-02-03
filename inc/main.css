@@ -32,12 +32,15 @@ HR {
 }
 
 A:link, A:visited {
-  color: #0000FF;
+  color: #99CA3C;
   text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 A:hover, A:active {
-  color: #FF0000;
+  color: #252525;
   text-decoration: none;
 }
 
@@ -47,6 +50,101 @@ H1 {
 
 H2 {
   font-size: 1.5em;
+}
+
+INPUT[type="text"],
+INPUT[type="email"],
+INPUT[type="password"],
+TEXTAREA {
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #B7B7B7;
+  border-radius: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  color: #252525;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1em;
+  -webkit-appearance: none; /* I prefer my styles, Steve Jobs */
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  overflow: auto; /* Good ol' IE */
+  margin-bottom: 2em;
+}
+
+TEXTAREA {
+  padding: 0.9em 1em;
+  height: 18em;
+  border: 1px solid #B7B7B7;
+}
+
+INPUT::-webkit-input-placeholder { color: #252525; uppercase; opacity: 1; }
+INPUT:-moz-placeholder { color: #252525; uppercase; opacity: 1; } /* FF 4-18 */
+INPUT::-moz-placeholder { color: #252525; uppercase; opacity: 1; } /* FF 19+ */
+INPUT:-ms-input-placeholder { color: #252525; uppercase; opacity: 1; } /* IE 10+ */
+TEXTAREA::-webkit-input-placeholder { color: #252525; opacity: 1; }
+TEXTAREA:-moz-placeholder { color: #252525; opacity: 1; } /* FF 4-18 */
+TEXTAREA::-moz-placeholder { color: #252525; opacity: 1; } /* FF 19+ */
+TEXTAREA:-ms-input-placeholder { color: #252525; opacity: 1; } /* IE 10+ */
+
+INPUT:focus::-webkit-input-placeholder { color: transparent; }
+INPUT:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+INPUT:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+INPUT:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+TEXTAREA:focus::-webkit-input-placeholder { color: transparent; }
+TEXTAREA:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+TEXTAREA:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+TEXTAREA:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+
+INPUT[type="submit"] {
+  outline: none;
+  border: 0;
+  border-radius: 17px;
+  box-sizing: border-box;
+  padding: 1em 3.3em 0.8em 3.5em;
+  background: #99CA3C;
+  color: #1D1A1B;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 0.8em;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-appearance: none; /* I prefer my styles, Steve Jobs */
+  display: block;
+  margin: 2em auto;
+}
+
+INPUT[type="submit"]:hover {
+  background: #252525;
+  color: #FFFFFF;
+}
+
+.my-form-label {
+  color: #252525;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1em;
+  margin: 0.8em 0 0.3em;
+}
+
+#form-messages {
+  min-height: 2.4em;
+  line-height: 1.2em;
+  color: #B7262F;
+  font-weight: bold;
+  text-align: center;
 }
 
 .site-width {
@@ -524,6 +622,10 @@ H3.headline {
   padding-top: 62.5%;
 }
 
+.partners.partners-services .partner-images .image {
+  width: 15%;
+}
+
 .testimonials {
   background: #252525;
   color: #FFFFFF;
@@ -850,14 +952,62 @@ H3.headline {
 .our-process .process.p3:before { content: "03."; }
 .our-process .process.p4:before { content: "04."; }
 
+.tag {
+  padding: 130px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
 
+.contact-intro {
+  padding: 5em 0;
+  text-align: center;
+  font-size: 17px;
+}
 
+.contact-intro H3.headline {
+  margin-bottom: 3em;
+}
 
+.contact-intro .contact-links {
+  margin-top: 2.5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 
+.contact-intro .contact-links A:link,
+.contact-intro .contact-links A:visited {
+  color: #252525;
+  text-decoration: none;
+}
 
+.contact-intro .contact-links A:hover,
+.contact-intro .contact-links A:active {
+  color: #99CA3C;
+  text-decoration: none;
+}
 
+.contact-intro .contact-links SPAN:after {
+  content: "\2022";
+  margin: 0 0.5em;
+}
 
+.contact-form {
+  border: 18px solid #252525;
+  box-sizing: border-box;
+  padding: 7em 0 4em;
+  margin-bottom: 8em;
+}
 
+#contact-form {
+  width: 59%;
+  margin: 0 auto;
+}
 
 
 
@@ -918,6 +1068,10 @@ H3.headline {
     width: 17%;
   }
 
+  .partners.partners-services .partner-images .image {
+    width: 25%;
+  }
+
   .leadership {
     margin-bottom: 0;
   }
@@ -959,6 +1113,19 @@ H3.headline {
 
   .our-services .site-width DIV {
     width: 24.6%;
+  }
+
+  .our-process .process {
+    margin: 50px 0;
+    width: 45%;
+  }
+
+  .contact-form {
+    padding: 5em 0 2em;
+  }
+
+  #contact-form {
+    width: 80%;
   }
 }
 
@@ -1061,6 +1228,12 @@ H3.headline {
 
   .our-services .site-width DIV {
     width: 32.6%;
+  }
+
+  .our-process .process {
+    margin: 50px 0 0;
+    width: 100%;
+    float: none;
   }
 }
 
@@ -1253,6 +1426,16 @@ H3.headline {
     width: 49.3%;
     line-height: 3em;
   }
+
+  .contact-intro .contact-links SPAN {
+    display: block;
+    visibility: hidden;
+    height: 0.5em;
+  }
+
+  #contact-form {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 390px) {
@@ -1260,5 +1443,17 @@ H3.headline {
   .our-services .site-width DIV {
     width: 100%;
     line-height: 2em;
+  }
+
+  .our-process .process:before {
+    font-size: 195px;
+  }
+
+  .our-process .process H2 {
+    font-size: 50px;
+  }
+
+  .contact-intro .contact-links {
+    font-size: 15px;
   }
 }
