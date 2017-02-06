@@ -1,20 +1,20 @@
 <?php
 include("../inc/dbconfig.php");
 
-$direct = "";
-
 switch ($_REQUEST['a']) {
   case "add":
     $mysqli->query("INSERT INTO testimonials (
                   testimonial,
                   person,
                   title,
-                  publish
+                  publish,
+                  sort
                   ) VALUES (
                   '" . $mysqli->real_escape_string($_POST['testimonial']) . "',
                   '" . $mysqli->real_escape_string($_POST['person']) . "',
                   '" . $mysqli->real_escape_string($_POST['title']) . "',
-                  '" . $_POST['publish'] . "'
+                  '" . $_POST['publish'] . "',
+                  '0'
                   )");
     break;
   case "edit":

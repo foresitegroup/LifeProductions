@@ -1,4 +1,5 @@
 video
+admin/login.php
 inc/dbconfig.php
 journal/*
 !journal/wp-content/

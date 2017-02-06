@@ -382,7 +382,7 @@ A.slick-next {
   z-index: 5;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -33%);
   color: #FFFFFF;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   font-family: 'Poppins', sans-serif;
@@ -400,20 +400,40 @@ A.slick-next {
   letter-spacing: 0.3em;
 }
 
-.video-banner .video-text A:link,
-.video-banner .video-text A:visited {
+A.play-button:link,
+A.play-button:visited {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 138px;
-  line-height: 1em;
-  margin-top: 0.3em;
   display: inline-block;
+  border: 13px solid #FFFFFF;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 100px;
+  width: 1.18em;
+  height: 1.18em;
+  line-height: 1em;
+  position: relative;
 }
 
-.video-banner .video-text A:hover,
-.video-banner .video-text A:active {
+A.play-button:hover,
+A.play-button:active {
   color: #99CA3C;
+  border-color: #99CA3C;
   text-decoration: none;
+}
+
+A.play-button:after {
+  font-family: "Ionicons";
+  content: "\f363";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%,-50%);
+}
+
+.video-banner .video-text A.play-button:link,
+.video-banner .video-text A.play-button:visited {
+  margin-top: 50px;
 }
 
 .banner {
@@ -610,6 +630,10 @@ H3.headline {
   background-size: auto 133%;
 }
 
+/*.our-work-video A.play-button {
+  z-index: 5
+}*/
+
 .our-work-video A:link,
 .our-work-video A:visited {
   position: absolute;
@@ -619,7 +643,7 @@ H3.headline {
   transform: translate(-50%,-60%);
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 110px;
+  font-size: 80px;
   line-height: 1em;
 }
 
@@ -639,6 +663,7 @@ H3.headline {
   font-size: 15px;
   line-height: 1.1em;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   padding: 1.2em 1.5em;
 }
 
@@ -1066,6 +1091,153 @@ H3.headline {
   margin: 0 auto;
 }
 
+.journal-post {
+  margin: 70px 0;
+  position: relative;
+}
+
+.banner.journal-index {
+  margin-bottom: 140px;
+}
+
+.journal-post-text {
+  box-sizing: border-box;
+  border: 18px solid #252525;
+  width: 50%;
+  padding: 3em 4em;
+  font-size: 14px;
+}
+
+.journal-post.image-left .journal-post-text {
+  margin-left: 50%;
+}
+
+.journal-post-text .date {
+  color: #98CA3E;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.journal-post-text H2 {
+  margin: 0.4em 0 0.2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.journal-post-text A.readmore:link,
+.journal-post-text A.readmore:visited {
+  margin-top: 4em;
+  display: inline-block;
+  color: #252525;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+}
+
+.journal-post-text A.readmore:hover,
+.journal-post-text A.readmore:active {
+  color: #98CA3E;
+  text-decoration: underline;
+}
+
+.journal-post-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/journal-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.journal-post.image-left .journal-post-image {
+  right: auto;
+  left: 0;
+}
+
+.journal-post-image:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.journal-post-image DIV {
+  display: none;
+  border: 5px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 0.8em 1.1em 0.6em 1.1em;
+  color: #99CA3C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.image-right .journal-post-image DIV:before {
+  font-family: "FontAwesome";
+  content: "\f060";
+  margin-right: 0.5em;
+  letter-spacing: 0;
+}
+
+.image-left .journal-post-image DIV:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  margin-left: 0.5em;
+  letter-spacing: 0;
+}
+
+.journal-post-image:hover DIV {
+  display: block;
+}
+
+.learnmore {
+  padding: 75px 0 150px;
+  text-align: center;
+}
+
+A#loadmore:link,
+A#loadmore:visited {
+  display: inline-block;
+  margin: 0 auto;
+  border: 8px solid #252525;
+  border-radius: 18px;
+  padding: 0.8em 1em 0.6em 1.2em;
+  color: #252525;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+}
+
+A#loadmore:hover,
+A#loadmore:active {
+  border-color: #98CA3E;
+  color: #98CA3E;
+}
+
 .journal-content-single .journal-date {
   margin-top: 75px;
   color: #98CA3E;
@@ -1240,7 +1412,8 @@ NAV H2 {
 
 
 @media only screen and (max-width: 1200px) {
-  .site-width-wide {
+  .site-width-wide,
+  .banner.journal-single {
     width: 96%;
   }
 }
@@ -1275,6 +1448,10 @@ NAV H2 {
     padding: 0 6%;
     line-height: 1.5em;
   }
+
+  .journal-content-single P {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1285,6 +1462,11 @@ NAV H2 {
 
   .video-banner .video-text {
     transform: translate(-50%, -40%);
+  }
+
+  .banner.journal-index .site-width {
+    font-size: 11vw;
+    transform: translate(-50%,0);
   }
 
   .our-work-video {
@@ -1354,6 +1536,17 @@ NAV H2 {
   #contact-form {
     width: 80%;
   }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links A:link,
+  .nav-links A:visited {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1368,6 +1561,15 @@ NAV H2 {
 
   .banner .site-width {
     transform: translate(-50%,-37%);
+  }
+
+  .banner.journal-single,
+  .banner.journal-index {
+    min-height: 320px;
+  }
+
+  .banner.journal-index .site-width {
+    transform: translate(-50%,50%);
   }
 
   .about .one-third {
@@ -1461,6 +1663,33 @@ NAV H2 {
     margin: 50px 0 0;
     width: 100%;
     float: none;
+  }
+
+  .journal-post-text {
+    width: 100%;
+  }
+
+  .journal-post.image-left .journal-post-text {
+    margin-left: 0;
+  }
+
+  .journal-post-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: block;
+  }
+
+  .image-right .journal-post-image DIV:before {
+    content: "";
+  }
+
+  .image-left .journal-post-image DIV:after,
+  .image-right .journal-post-image DIV:after {
+    font-family: "FontAwesome";
+    content: "\f063";
+    margin-left: 0.5em;
+    letter-spacing: 0;
   }
 }
 
@@ -1662,6 +1891,42 @@ NAV H2 {
 
   #contact-form {
     width: 90%;
+  }
+
+  .journal-post-text {
+    padding: 3em 2em;
+  }
+
+  .journal-gallery.gallery-columns-2 A,
+  .journal-gallery.gallery-columns-3 A,
+  .journal-gallery.gallery-columns-4 A,
+  .journal-gallery.gallery-columns-5 A,
+  .journal-gallery.gallery-columns-6 A,
+  .journal-gallery.gallery-columns-7 A,
+  .journal-gallery.gallery-columns-8 A,
+  .journal-gallery.gallery-columns-9 A {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  .nav-links A:link,
+  .nav-links A:visited {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .nav-links A.next {
+    border-left-width: 2px;
+    border-top-width: 1px;
+  }
+
+  .nav-links A.prev {
+    border-right-width: 2px;
+    border-bottom-width: 1px;
   }
 }
 

@@ -53,13 +53,20 @@ if ( is_single() ) { ?>
 		?>
 	</div>
 <?php } else { ?>
-	<div class="site-width-wide">
-		<div class="date">Posted on <?php echo get_the_date(); ?></div>
+	<div class="site-width-wide journal-content-index">
 
-		<h2><?php the_title(); ?></h2>
+    <div class="journal-post <?php echo $GLOBALS['image_class']; ?>" style="display: none;">
+      <a href="<?php the_permalink(); ?>" class="journal-post-image"<?php if (wp_get_attachment_url(get_post_thumbnail_id()) != "") echo ' style="background-image: url(' . wp_get_attachment_url(get_post_thumbnail_id()) . ');"'; ?>><div>READ</div></a>
 
-		<?php echo get_the_excerpt(); ?><br>
+      <div class="journal-post-text">
+    		<div class="date"><?php echo get_the_date(); ?></div>
 
-		<a href="<?php the_permalink(); ?>" class="readmore">READ MORE</a>
+    		<h2><?php the_title(); ?></h2>
+
+    		<?php echo get_the_excerpt(); ?><br>
+
+    		<a href="<?php the_permalink(); ?>" class="readmore">READ STORY</a>
+      </div>
+    </div>
 	</div>
 <?php } ?>

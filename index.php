@@ -21,7 +21,7 @@ include "header.php";
     A DIGITAL MARKETING VIDEO AGENCY
     <br>
 
-    <a href="https://www.youtube.com/watch?v=43XkOUKYzj0" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+    <a href="https://www.youtube.com/watch?v=43XkOUKYzj0" class="swipebox-video play-button" rel="home-banner"></a>
   </div>
 </div>
 
@@ -75,59 +75,26 @@ include "header.php";
   <div class="our-work cf">
     <div class="bisect-top-outer"></div>
 
-    <div class="our-work-video" style="background-image: url(images/video-milwaukee-excellence.jpg);">
-      <a href="https://www.youtube.com/watch?v=43XkOUKYzj0" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+    <?php
+    include_once "inc/dbconfig.php";
+    $result = $mysqli->query("SELECT * FROM home_videos WHERE publish = 'on' ORDER BY sort+0 ASC");
 
-      <div>
-        MILWAUKEE EXCELLENCE SCHOOL OPENING DAY 2016<br>
-        <span>EDUCATION VIDEO</span>
+    while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+      $TheImage = ($row['image'] != "") ? "images/home-videos/" . $row['image'] : VideoImage($row['video']);
+      ?>
+      <div class="our-work-video" style="background-image: url(<?php echo $TheImage; ?>);">
+        <a href="<?php echo $row['video']; ?>" class="swipebox-video play-button" rel="<?php echo $row['id']; ?>"></a>
+
+        <div>
+          <?php echo $row['title']; ?><br>
+          <span><?php echo $row['type']; ?></span>
+        </div>
       </div>
-    </div>
+      <?php
+    }
 
-    <div class="our-work-video" style="background-image: url(images/video-dsha.jpg);">
-      <a href="https://www.youtube.com/watch?v=bACd24twSGk" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-
-      <div>
-        DIVINE SAVIOR HOLY ANGELS<br>
-        <span>EDUCATION VIDEO</span>
-      </div>
-    </div>
-
-    <div class="our-work-video" style="background-image: url(images/video-girl-scouts.jpg);">
-      <a href="https://www.youtube.com/watch?v=iTpVQgGjYAI" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-
-      <div>
-        GIRL SCOUTS OF WISCONSIN SOUTHEAST<br>
-        <span>ORGANIZATION VIDEO</span>
-      </div>
-    </div>
-
-    <div class="our-work-video" style="background-image: url(images/video-mcw.jpg);">
-      <a href="https://www.youtube.com/watch?v=zvaZTryzJzs" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-
-      <div>
-        MCW ANESTHESIOLOGY RESIDENT PROGRAM<br>
-        <span>EDUCATION VIDEO</span>
-      </div>
-    </div>
-
-    <div class="our-work-video" style="background-image: url(images/video-david-j-frank.jpg);">
-      <a href="https://www.youtube.com/watch?v=DKr2NiTjsaI" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-
-      <div>
-        DAVID J. FRANK LANDSCAPING LLC<br>
-        <span>BRAND VIDEO</span>
-      </div>
-    </div>
-
-    <div class="our-work-video" style="background-image: url(images/video-saint-a.jpg);">
-      <a href="https://www.youtube.com/watch?v=poWSxJcZ2KY" class="swipebox-video"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-
-      <div>
-        SAINT A FOSTER CARE<br>
-        <span>RECRUITMENT VIDEO</span>
-      </div>
-    </div>
+    $result->close();
+    ?>
   </div>
 
   <div class="partners">
@@ -160,7 +127,6 @@ include "header.php";
     <script type="text/javascript" src="inc/slick/slick.init.testimonials.js"></script>
     <div class="testimonials-slider">
       <?php
-      include_once "inc/dbconfig.php";
       $result = $mysqli->query("SELECT * FROM testimonials WHERE publish = 'on' ORDER BY sort+0 ASC");
 
       while($row = $result->fetch_array(MYSQLI_ASSOC)) {

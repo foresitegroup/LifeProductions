@@ -21,6 +21,8 @@ $TopDir = substr( home_url(), 0, strrpos( home_url(), '/')+1);
 
 if ( have_posts() ) :
 
+	$GLOBALS['image_class'] = "image-right";
+
 	/* Start the Loop */
 	while ( have_posts() ) : the_post();
 
@@ -30,22 +32,33 @@ if ( have_posts() ) :
 		 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 		 */
 		get_template_part( 'content', get_post_format() );
-
+    
+    $GLOBALS['image_class'] = ($GLOBALS['image_class'] == "image-right") ? "image-left" : "image-right";
 	endwhile;
-
-	echo "<div class=\"site-width blog-index-nav\">\n";
-		// Previous/next page navigation.
-		FG_posts_pagination(array(
-			'next_text' => __('OLDER POSTS'),
-			'prev_text' => __('NEWER POSTS')
-		));
-	echo "</div>\n";
 
 else :
 
 	get_template_part( 'content', 'none' );
 
 endif;
+
+if (!is_single()) : ?>
+<div class="learnmore">
+	<a href="#" id="loadmore">LOAD MORE</a>
+	<script type="text/javascript">
+	  $(function () {
+		  $(".journal-post").slice(0, 5).show();
+		  $("#loadmore").on('click', function (e) {
+		    e.preventDefault();
+		    $(".journal-post:hidden").slice(0, 5).slideDown();
+		    if ($(".journal-post:hidden").length == 0) {
+		      $("#load").fadeOut('slow');
+		    }
+		  });
+		});
+	</script>
+</div>
+<?php endif;
 
 get_footer();
 ?>
