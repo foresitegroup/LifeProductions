@@ -423,12 +423,13 @@ A.play-button:active {
 }
 
 A.play-button:after {
-  font-family: "Ionicons";
-  content: "\f363";
+  font-family: "FontAwesome";
+  content: "\f04b";
+  font-size: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-25%,-50%);
+  transform: translate(-40%,-50%);
 }
 
 .video-banner .video-text A.play-button:link,
@@ -630,27 +631,13 @@ H3.headline {
   background-size: auto 133%;
 }
 
-/*.our-work-video A.play-button {
-  z-index: 5
-}*/
-
-.our-work-video A:link,
-.our-work-video A:visited {
+.our-work-video A.play-button {
   position: absolute;
   z-index: 5;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-60%);
-  color: #FFFFFF;
-  text-decoration: none;
   font-size: 80px;
-  line-height: 1em;
-}
-
-.our-work-video A:hover,
-.our-work-video A:active {
-  color: #99CA3C;
-  text-decoration: none;
 }
 
 .our-work-video > DIV {
@@ -777,13 +764,21 @@ H3.headline {
   padding-top: 66.66%;
 }
 
-.leadership .leader:hover:after {
+.leadership .leader:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0);
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.leadership .leader:hover:after {
   background: rgba(0, 0, 0, 0.65);
 }
 
@@ -808,8 +803,8 @@ H3.headline {
   letter-spacing: 0;
 }
 
-.leader-content-hover {
-  display: none;
+.leader .leader-content-hover {
+  opacity: 0;
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -820,10 +815,14 @@ H3.headline {
   padding: 0 4em;
   font-size: 18px;
   line-height: 2em;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .leader:hover .leader-content-hover {
-  display: block;
+  opacity: 1;
 }
 
 .social {
@@ -983,8 +982,9 @@ H3.headline {
 .our-services .site-width DIV {
   display: inline-block;
   width: 19.6%;
-  padding: 1em 0;
-  line-height: 4em;
+  padding: 3em 0;
+  line-height: 1em;
+  vertical-align: middle;
 }
 
 .our-process {
@@ -1180,8 +1180,8 @@ H3.headline {
 .journal-post-image DIV {
   display: none;
   border: 5px solid #FFFFFF;
-  border-radius: 15px;
-  padding: 0.8em 1.1em 0.6em 1.1em;
+  border-radius: 18px;
+  padding: 0.8em 1.1em 0.6em 0.9em;
   color: #99CA3C;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -1194,17 +1194,19 @@ H3.headline {
   transform: translate(-50%,-50%);
 }
 
+.image-left .journal-post-image DIV {
+  padding: 0.8em 0.9em 0.6em 1.1em;
+}
+
 .image-right .journal-post-image DIV:before {
-  font-family: "FontAwesome";
-  content: "\f060";
+  content: "\2190";
   margin-right: 0.5em;
   letter-spacing: 0;
 }
 
 .image-left .journal-post-image DIV:after {
-  font-family: "FontAwesome";
-  content: "\f061";
-  margin-left: 0.5em;
+  content: "\2192";
+  margin-left: 0.3em;
   letter-spacing: 0;
 }
 
@@ -1444,8 +1446,8 @@ NAV H2 {
     width: 85%;
   }
 
-  .leader-content-hover {
-    padding: 0 6%;
+  .leader .leader-content-hover {
+    padding: 0 5%;
     line-height: 1.5em;
   }
 
@@ -1612,7 +1614,7 @@ NAV H2 {
     width: 100%;
   }
 
-  .leader-content-hover {
+  .leader .leader-content-hover {
     padding: 0 4em;
     line-height: 2em;
   }
@@ -1686,10 +1688,7 @@ NAV H2 {
 
   .image-left .journal-post-image DIV:after,
   .image-right .journal-post-image DIV:after {
-    font-family: "FontAwesome";
-    content: "\f063";
-    margin-left: 0.5em;
-    letter-spacing: 0;
+    content: "\2193";
   }
 }
 
@@ -1867,9 +1866,13 @@ NAV H2 {
     margin-top: 75px;
   }
 
-  .leader-content-hover {
+  .leader-content {
+    bottom: 1em;
+  }
+
+  .leader .leader-content-hover {
     padding: 0 4%;
-    font-size: 4vw;
+    font-size: 3.7vw;
     line-height: 1.5em;
   }
 
@@ -1880,7 +1883,6 @@ NAV H2 {
 
   .our-services .site-width DIV {
     width: 49.3%;
-    line-height: 3em;
   }
 
   .contact-intro .contact-links SPAN {
@@ -1932,9 +1934,17 @@ NAV H2 {
 
 @media only screen and (max-width: 390px) {
   /* Small Phone */
+  .video-banner .video-text {
+    font-size: 9vw;
+  }
+
+  .video-banner .video-text A.play-button:link,
+  .video-banner .video-text A.play-button:visited {
+    margin-top: 25px;
+  }
+
   .our-services .site-width DIV {
     width: 100%;
-    line-height: 2em;
   }
 
   .our-process .process:before {

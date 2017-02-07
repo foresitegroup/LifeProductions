@@ -34,7 +34,7 @@ include "header.php";
 
     Life Productions is a video production agency that specializes in professionally produced videos for businesses, individuals and organizations. We believe our unscripted media presentations are powerful communication tools that showcase the essence of an individual, business or organization by letting our clients tell their story "in their own words" through digital video.<br>
     <br>
-    
+
     <link rel="stylesheet" href="inc/slick/slick.css">
     <script type="text/javascript" src="inc/slick/slick.min.js"></script>
     <script type="text/javascript" src="inc/slick/slick.init.awards.js"></script>
@@ -101,7 +101,7 @@ include "header.php";
     <div class="bisect-top"></div>
 
     <h3 class="headline">WE'VE PARTNERED WITH</h3>
-    
+
     <script type="text/javascript" src="inc/slick/slick.init.partners.js"></script>
     <div class="partner-images">
       <div class="image" style="background-image: url(images/logo-business-journal.png)"></div>
@@ -168,7 +168,7 @@ include "header.php";
       </div>
 
       <div class="leader-content-hover">
-        A UW Madison graduate with a background in Public Television (WHA-TV, WNDU-TV), editing promotional pieces and doing research for local documentaries. Her work has been featured on ESPN along with winning a Chicago Midwest Emmy Award for a Single Public Affairs Program in 1997-98.<br>
+        A UW Madison graduate with a background in Public Broadcasting (WHA-TV) editing promotional pieces, doing research for local documentaries and working as a news reporter and public affairs host at WNDU-TV in Indiana. Her work has been featured on ESPN along with winning a Chicago Midwest Emmy Award for a Single Public Affairs Program in 1997-98.<br>
         <br>
 
         <div class="social">

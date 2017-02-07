@@ -21,14 +21,14 @@ include "header.php";
     <div>EVENT VIDEO</div>
     <div>SHORT FILMS</div>
     <div>PRESENTATION VIDEO</div>
-    <div>AWARD ENTRIES</div>
-    <div>HIGHLIGHT REELS</div>
+    <div>SOCIAL MEDIA CONTENT</div>
     <div>NON-PROFIT</div>
+    <div>PROMOTIONAL TRAILERS</div>
     <div>TRIBUTE VIDEOS</div>
     <div>ON-SITE SHOOTS</div>
     <div>ANIMATION</div>
     <div>MOTION GRAPHICS</div>
-    <div>ORGANZATION</div>
+    <div>ORGANIZATION</div>
     <div>CORPORATE VIDEOS</div>
     <div>DIGITAL ENCODING</div>
   </div>
