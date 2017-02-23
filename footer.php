@@ -14,16 +14,15 @@
         </div>
 
         <div class="footer-col1">
-          5061 N. Cumberland Blvd<br>
-          Milwaukee, WI 53217
+          Headquartered In Milwaukee, WI
         </div>
 
         <div class="footer-col3">
-          <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+          <a href="http://vimeo.com/lpivideo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
           <a href="https://www.facebook.com/Life-Productions-Inc-120079941350543/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/lpivideo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="http://instagram.com/lpivideo"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company-beta/2388795/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>

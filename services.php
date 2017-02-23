@@ -42,7 +42,7 @@ include "header.php";
 
     <div class="process p1">
       <h2>LEARN</h2>
-      We meet with you to learn about you, your organization and business, taking special care to identify the objectives for your video presentation. We go over every aspect of the production and discuss all the ways you envision your video being used, the audience you are hoping to reach, the message you want to communicate and the type of emotion you want the video to evoke. We create a taping schedule that will work for you.
+      We meet with you to learn about you, your organization and business, taking special care to identify the objectives for your video presentation. We go over every aspect of the production and discuss all the ways you envision your video being used, the audience you are hoping to reach, the message you want to communicate and the type of emotion you want the video to evoke. We work with you to create a tape schedule that is both efficient and effective.
     </div>
 
     <div class="process p2">
@@ -52,12 +52,12 @@ include "header.php";
 
     <div class="process p3">
       <h2>EDIT</h2>
-      In a timely and efficient manner we will edit your material and create a production piece that reflects the objectives that you have initially outlined. We celebrate your input making sure that we create a piece that you are happy with and schedule a post-production meeting so that we have your complete approval before we proceed with the packaging.
+      In a timely and efficient manner we will edit your material and create a production piece that reflects the objectives that you have initially outlined. We celebrate your input making sure that we create a piece that you are happy with and schedule a post-production meeting so that we have your complete approval before we proceed with exporting your finished product.
     </div>
 
     <div class="process p4">
-      <h2>DISTRIBUTE</h2>
-      You want to have confidence that your production will be produced on time, deliver an emotional appeal and communicate your unique message. We take special care that the video is tailored to the "personality" of your business or organization and is presented seamlessly. We will guide you through the process to determine the best distribution means and compression for final delivery.
+      <h2>DELIVER</h2>
+      You want to have confidence that your production will be produced on time and deliver a message that will make you stand out to your prospective clients and donors.  We pride ourselves in providing impactful digital marketing pieces that will engage your special events audience, your website visitors and social media community.
     </div>
 
     <div style="clear: both;"></div>
@@ -65,7 +65,7 @@ include "header.php";
 
   <div class="partners partners-services">
     <h3 class="headline">WE'VE PARTNERED WITH</h3>
-    
+
     <link rel="stylesheet" href="inc/slick/slick.css">
     <script type="text/javascript" src="inc/slick/slick.min.js"></script>
     <script type="text/javascript" src="inc/slick/slick.init.partners.js"></script>
@@ -108,7 +108,7 @@ include "header.php";
       ?>
     </div>
   </div>
-  
+
   <div class="tag">
     A Life Production is unscripted, real and authentic.
   </div>

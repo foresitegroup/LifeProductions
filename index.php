@@ -32,7 +32,7 @@ include "header.php";
 
     <h3 class="headline">ABOUT</h3>
 
-    Life Productions is a video production agency that specializes in professionally produced videos for businesses, individuals and organizations. We believe our unscripted media presentations are powerful communication tools that showcase the essence of an individual, business or organization by letting our clients tell their story "in their own words" through digital video.<br>
+    Life Productions is a video production agency that specializes in professionally produced videos for businesses, individuals and organizations. Our unscripted media presentations are powerful communication tools that showcase the essence of an individual, business or organization by letting our clients tell their story "in their own words" through digital video.<br>
     <br>
 
     <link rel="stylesheet" href="inc/slick/slick.css">
@@ -173,7 +173,7 @@ include "header.php";
 
         <div class="social">
           <a href="http://twitter.com/thetruetami"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/tamisweeney/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -190,7 +190,7 @@ include "header.php";
 
         <div class="social">
           <a href="http://twitter.com/lpivideo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/louiseberg/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
