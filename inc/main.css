@@ -975,13 +975,13 @@ H3.headline {
   margin-bottom: 4em;
 }
 
-.our-services .site-width {
+.our-services .site-width-wide {
   text-align: center;
 }
 
-.our-services .site-width DIV {
+.our-services .site-width-wide DIV {
   display: inline-block;
-  width: 19.6%;
+  width: 24.6%;
   padding: 3em 0;
   line-height: 1em;
   vertical-align: middle;
@@ -1524,8 +1524,8 @@ NAV H2 {
     width: 50%;
   }
 
-  .our-services .site-width DIV {
-    width: 24.6%;
+  .our-services .site-width-wide DIV {
+    width: 32.6%;
   }
 
   .our-process .process {
@@ -1688,8 +1688,8 @@ NAV H2 {
     margin: 0 3%;
   }
 
-  .our-services .site-width DIV {
-    width: 32.6%;
+  .our-services .site-width-wide DIV {
+    width: 49.6%;
   }
 
   .our-process .process {
@@ -1892,8 +1892,9 @@ NAV H2 {
     margin: 0 2%;
   }
 
-  .our-services .site-width DIV {
-    width: 49.3%;
+  .our-services .site-width-wide DIV {
+    width: 100%;
+    padding: 1em 0;
   }
 
   .contact-intro .contact-links SPAN {

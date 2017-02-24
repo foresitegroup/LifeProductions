@@ -145,7 +145,7 @@ include "header.php";
   </div>
 
   <div class="experience">
-    Since 2005 Life Productions Inc. has produced over 225 videos for clients in the greater Milwaukee area. Our experience has helped us to develop a successful strategy to engage audiences, constituents and benefactors.
+    Since 2005 Life Productions Inc. has served hundreds of clients in the greater Milwaukee area. Our experience has helped us to develop a successful strategy to engage audiences, constituents and benefactors.
   </div>
 
   <h3 class="headline">LEADERSHIP</h3>

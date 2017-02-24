@@ -15,21 +15,22 @@ include "header.php";
 
   <h3 class="headline">OUR SERVICES</h3>
 
-  <div class="site-width">
+  <div class="site-width-wide">
     <div>MARKETING VIDEOS</div>
-    <div>BRAND VIDEOS</div>
-    <div>EVENT VIDEO</div>
-    <div>SHORT FILMS</div>
-    <div>PRESENTATION VIDEO</div>
+    <div>RECRUIMENT</div>
+    <div>CAPITAL CAMPAIGNS</div>
+    <div>WEB BANNERS</div>
+    <div>EVENT VIDEOS</div>
     <div>SOCIAL MEDIA CONTENT</div>
-    <div>NON-PROFIT</div>
     <div>PROMOTIONAL TRAILERS</div>
     <div>TRIBUTE VIDEOS</div>
     <div>ON-SITE SHOOTS</div>
-    <div>ANIMATION</div>
     <div>MOTION GRAPHICS</div>
-    <div>ORGANIZATION</div>
     <div>CORPORATE VIDEOS</div>
+    <div>SHORT FILMS</div>
+    <div>EDUCATION VIDEOS</div>
+    <div>BRAND VIDEOS</div>
+    <div>ORGANIZATION VIDEOS</div>
     <div>DIGITAL ENCODING</div>
   </div>
 </div>
