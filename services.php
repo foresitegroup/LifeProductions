@@ -17,7 +17,7 @@ include "header.php";
 
   <div class="site-width-wide">
     <div>MARKETING VIDEOS</div>
-    <div>RECRUIMENT</div>
+    <div>RECRUITMENT</div>
     <div>CAPITAL CAMPAIGNS</div>
     <div>WEB BANNERS</div>
     <div>EVENT VIDEOS</div>

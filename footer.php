@@ -9,8 +9,8 @@
     <div class="lp-footer">
       <div class="site-width">
         <div class="footer-col2">
-          <?php email("hello@lifeproductonsinc.com"); ?><br>
-          (414) 123-4567
+          <?php email("tami@lifeproductonsinc.com"); ?><br>
+          <?php email("louise@lifeproductonsinc.com"); ?>
         </div>
 
         <div class="footer-col1">

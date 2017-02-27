@@ -56,7 +56,7 @@ include "header.php";
 
         Milwaukee Women's Center<br>
         Marquette High School<br>
-        Assitive Resource
+        Assistive Resource
       </div>
 
       <div class="one-third">

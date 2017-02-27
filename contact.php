@@ -16,12 +16,16 @@ include "header.php";
 <div class="site-width contact-intro">
   <h3 class="headline">CONTACT US</h3>
 
-  If you are interested in starting a project, have an idea or a question we would love to hear from you.
+  If you are interested in starting a project, have an idea or a question we would love to hear from you.<br>
 
   <div class="contact-links">
-    <?php email("hello@lifeproductionsinc.com", "HELLO@LIFEPRODUCTIONSINC.COM"); ?>
-    <span></span>
-    (414) 123-4567
+    TAMI SWEENEY <span>Executive Producer / Partner</span>
+    <?php email("tami@lifeproductionsinc.com"); ?>
+  </div>
+
+  <div class="contact-links">
+    LOUISE BERG <span>Executive Producer / Partner</span>
+    <?php email("louise@lifeproductionsinc.com"); ?>
   </div>
 </div>
 

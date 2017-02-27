@@ -577,6 +577,7 @@ H3.headline {
   color: #959595;
   font-size: 12px;
   line-height: 1.4em;
+  outline: 0;
 }
 
 .about .one-third:last-of-type {
@@ -683,6 +684,7 @@ H3.headline {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  outline: 0;
 }
 
 .partners .partner-images .image:after {
@@ -1053,27 +1055,31 @@ H3.headline {
 }
 
 .contact-intro .contact-links {
+  display: inline-block;
+  width: 49.7%;
   margin-top: 2.5em;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
+.contact-intro .contact-links SPAN {
+  color: #99CA3C;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
 .contact-intro .contact-links A:link,
 .contact-intro .contact-links A:visited {
   color: #252525;
   text-decoration: none;
+  font-size: 15px;
 }
 
 .contact-intro .contact-links A:hover,
 .contact-intro .contact-links A:active {
   color: #99CA3C;
   text-decoration: none;
-}
-
-.contact-intro .contact-links SPAN:after {
-  content: "\2022";
-  margin: 0 0.5em;
 }
 
 .contact-form {
@@ -1538,6 +1544,10 @@ NAV H2 {
     margin-right: 9%;
   }
 
+  .contact-intro .contact-links SPAN {
+    display: block;
+  }
+
   .contact-form {
     padding: 5em 0 2em;
   }
@@ -1700,6 +1710,10 @@ NAV H2 {
   .our-process .process.p1,
   .our-process .process.p3 {
     margin-right: 0;
+  }
+
+  .contact-intro .contact-links {
+    width: 100%;
   }
 }
 
@@ -1897,11 +1911,11 @@ NAV H2 {
     padding: 1em 0;
   }
 
-  .contact-intro .contact-links SPAN {
+/*  .contact-intro .contact-links SPAN {
     display: block;
     visibility: hidden;
     height: 0.5em;
-  }
+  }*/
 
   #contact-form {
     width: 90%;
