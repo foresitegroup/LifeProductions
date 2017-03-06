@@ -36,7 +36,7 @@ include "header.php";
 </div>
 
 <div class="site-width-wide">
-  <div class="our-process">
+  <div class="our-process" id="process">
     <div class="bisect-top"></div>
 
     <h3 class="headline">OUR PROCESS</h3>

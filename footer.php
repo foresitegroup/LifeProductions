@@ -9,8 +9,8 @@
     <div class="lp-footer">
       <div class="site-width">
         <div class="footer-col2">
-          <?php email("tami@lifeproductonsinc.com"); ?><br>
-          <?php email("louise@lifeproductonsinc.com"); ?>
+          <?php email("tami@lifeproductionsinc.com"); ?><br>
+          <?php email("louise@lifeproductionsinc.com"); ?>
         </div>
 
         <div class="footer-col1">

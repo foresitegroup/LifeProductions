@@ -26,7 +26,7 @@ include "header.php";
 </div>
 
 <div class="site-width">
-  <div class="about">
+  <div class="about" id="about">
     <div class="bisect-top-outer"></div>
     <div class="bisect-top"></div>
 
@@ -70,7 +70,7 @@ include "header.php";
   </div>
 </div>
 
-<div class="site-width-wide">
+<div class="site-width-wide" id="our-work">
   <h3 class="headline">OUR WORK</h3>
   <div class="our-work cf">
     <div class="bisect-top-outer"></div>
@@ -148,7 +148,7 @@ include "header.php";
     Since 2005 Life Productions Inc. has served hundreds of clients in the greater Milwaukee area. Our experience has helped us to develop a successful strategy to engage audiences, constituents and benefactors.
   </div>
 
-  <h3 class="headline">LEADERSHIP</h3>
+  <h3 class="headline" id="leadership">LEADERSHIP</h3>
   <div class="leadership">
     <div class="bisect-top-outer"></div>
 
