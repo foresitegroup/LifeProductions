@@ -9,8 +9,8 @@
     <div class="lp-footer">
       <div class="site-width">
         <div class="footer-col2">
-          <?php email("tami@lifeproductionsinc.com"); ?><br>
-          <?php email("louise@lifeproductionsinc.com"); ?>
+          <?php email("info@lifeproductionsinc.com"); ?><br>
+          (414) 395-0811
         </div>
 
         <div class="footer-col1">
