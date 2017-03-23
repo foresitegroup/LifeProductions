@@ -19,7 +19,7 @@ include "header.php";
   If you are interested in starting a project, have an idea or a question we would love to hear from you.<br>
 
   <div class="contact-links">
-    <?php email("info@lifeproductionsinc.com", "INFO@LIFEPRODUCTIONSINC.COM"); ?>
+    <?php email("tami@lifeproductionsinc.com,louise@lifeproductionsinc.com", "HELLO@LIFEPRODUCTIONSINC.COM"); ?>
     <span></span>
     (414) 395-0811
   </div>
