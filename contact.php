@@ -103,6 +103,9 @@ include "header.php";
       <div class="my-form-label">MESSAGE</div>
       <textarea name="<?php echo md5("message" . $ip . $salt . $timestamp); ?>" id="message"></textarea>
 
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <div class="g-recaptcha" data-sitekey="6LdwREcUAAAAAMTtUUPsTGECFA9LxYfXizkzLQkG"></div>
+
       <input type="hidden" name="referrer" value="contact.php">
 
       <input type="text" name="confirmationCAP" style="display: none;">
