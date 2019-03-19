@@ -21,7 +21,7 @@ if ($response != null && $response->success) {
     {
       // Send email
       $Subject = $_POST[md5('subject' . $_POST['ip'] . $salt . $_POST['timestamp'])];
-      $SendTo = "louise@lifeproductionsinc.com,tami@lifeproductionsinc.com";
+      $SendTo = "tami@lifeproductionsinc.com";
       $Headers = "From: " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . " <" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . ">\r\n";
       $Headers .= "Bcc: mark@foresitegrp.com\r\n";
 

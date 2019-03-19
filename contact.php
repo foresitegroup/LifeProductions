@@ -19,20 +19,20 @@ include "header.php";
   If you are interested in starting a project, have an idea or a question we would love to hear from you.<br>
 
   <div class="contact-links">
-    <?php email("tami@lifeproductionsinc.com,louise@lifeproductionsinc.com", "HELLO@LIFEPRODUCTIONSINC.COM"); ?>
+    <?php email("tami@lifeproductionsinc.com", "HELLO@LIFEPRODUCTIONSINC.COM"); ?>
     <span></span>
     (414) 395-0811
   </div>
 
   <div class="contact-links half">
-    TAMI SWEENEY <span>Executive Producer / Partner</span>
+    TAMI SWEENEY <span>Executive Producer / Owner</span>
     <?php email("tami@lifeproductionsinc.com"); ?>
   </div>
 
-  <div class="contact-links half">
+<!--   <div class="contact-links half">
     LOUISE BERG <span>Executive Producer / Partner</span>
-    <?php email("louise@lifeproductionsinc.com"); ?>
-  </div>
+    <?php //email("louise@lifeproductionsinc.com"); ?>
+  </div> -->
 </div>
 
 <div class="site-width-wide contact-form">

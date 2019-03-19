@@ -164,7 +164,7 @@ include "header.php";
     <div class="leader" style="background-image: url(images/leadership-tami.jpg);">
       <div class="leader-content">
         TAMI SWEENEY
-        <div>Executive Producer / Partner</div>
+        <div>Executive Producer / Owner</div>
       </div>
 
       <div class="leader-content-hover">
@@ -181,7 +181,7 @@ include "header.php";
     <div class="leader" style="background-image: url(images/leadership-louise.jpg);">
       <div class="leader-content">
         LOUISE BERG
-        <div>Executive Producer / Partner</div>
+        <div>Producer / Editor</div>
       </div>
 
       <div class="leader-content-hover">
