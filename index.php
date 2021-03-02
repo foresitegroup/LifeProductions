@@ -166,7 +166,9 @@ include "header.php";
         TAMI SWEENEY
         <div>Executive Producer / Owner</div>
       </div>
+    </div>
 
+    <div class="leader content">
       <div class="leader-content-hover">
         A UW Madison graduate with a background in Public Broadcasting (WHA-TV) editing promotional pieces, doing research for local documentaries and working as a news reporter and public affairs host at WNDU-TV in Indiana. Her work has been featured on ESPN along with winning a Chicago Midwest Emmy Award for a Single Public Affairs Program in 1997-98.<br>
         <br>
@@ -174,23 +176,6 @@ include "header.php";
         <div class="social">
           <a href="http://twitter.com/thetruetami"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/in/tamisweeney/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="leader" style="background-image: url(images/leadership-louise.jpg);">
-      <div class="leader-content">
-        LOUISE BERG
-        <div>Producer / Editor</div>
-      </div>
-
-      <div class="leader-content-hover">
-        A University of Minnesota graduate with a background in software, graphic and technical support while also volunteering in many capacities.  She has won awards for editing and production and was recently named as a member of The Aurora Awards International Judging Committee.<br>
-        <br>
-
-        <div class="social">
-          <a href="http://twitter.com/lpivideo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/louiseberg/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>

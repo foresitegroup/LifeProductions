@@ -760,6 +760,8 @@ H3.headline {
   text-align: center;
 }
 
+.leadership .leader.content { background: #99CA3C; }
+
 .leadership .leader:before {
   content: "";
   display: block;
@@ -780,8 +782,10 @@ H3.headline {
   transition: all .3s ease-in;
 }
 
-.leadership .leader:hover:after {
-  background: rgba(0, 0, 0, 0.65);
+/*.leadership .leader:hover:after { background: rgba(0, 0, 0, 0.65); }*/
+
+.leadership .leader.content:hover:after {
+  background: none;
 }
 
 .leader-content {
@@ -823,9 +827,9 @@ H3.headline {
   transition: all .3s ease-in;
 }
 
-.leader:hover .leader-content-hover {
-  opacity: 1;
-}
+.leader.content .leader-content-hover { opacity: 1; }
+
+/*.leader:hover .leader-content-hover { opacity: 1; }*/
 
 .social {
   line-height: 1em;
