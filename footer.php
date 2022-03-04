@@ -25,6 +25,12 @@
           <a href="https://www.linkedin.com/company-beta/2388795/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
+
+      <br>
+
+      <div style="text-align: center;">
+        <a href="https://foresitegrp.com" style="font-size: 0.6875rem; color: #FFFFFF; font-weight: 400;">WEBSITE BY FORESITE</a>
+      </div>
     </div>
 
   </body>
