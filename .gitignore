@@ -8,3 +8,4 @@ journal/wp-content/*
 journal/wp-content/themes/*
 !journal/wp-content/themes/lifeproductions
 journal/wp-content/themes/lifeproductions/.DS_Store
+.DS_Store
